@@ -4,11 +4,11 @@ echo -n "veux-tu créer un répertoire pour ton site O/N : ? "
 read ouinon
 if [ "$ouinon" = "o" ] || [ "$ouinon" = "O" ]; then
 	echo "Très bien, commençons"
-	echo -n "Dans quel répertoire veux-tu le mettre ?"
+	echo "Dans quel répertoire veux-tu le mettre ?"
 ls
 	read rep
 	cd $rep
-	echo -n "Quel nom veux-tu donner à ton dossier ?"
+	echo -n "Quel nom veux-tu donner à ton dossier ? "
 	read nom
 	mkdir -p $nom/{script,css,img}
 	touch $nom/script/script.js
